@@ -22054,9 +22054,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
           fragment.appendChild(_dom.default.make('div', _this2.Editor.Toolbox.CSS.tooltipShortcut, {
             textContent: '⇥ Tab'
           }));
-          var topOffset = 15;
           tooltip.style.left = '-17px';
-          tooltip.style.transform = 'translate3d(-50%, '.concat("".concat(topOffset), 'px, 0)');
           tooltip.innerHTML = '';
           tooltip.appendChild(fragment);
           tooltip.classList.add(_this2.Editor.Toolbox.CSS.tooltipShown);
@@ -23307,8 +23305,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 
         var leftOffset = 16;
         var coordinate = button.offsetLeft;
-        var topOffset = 15; // Math.floor(this.Editor.BlockManager.currentBlock.holder.offsetHeight / 2);
-
+        var topOffset = Math.floor(this.Editor.BlockManager.currentBlock.holder.offsetHeight / 2);
         this.nodes.tooltip.innerHTML = '';
         this.nodes.tooltip.appendChild(fragment);
         this.nodes.tooltip.style.left = "".concat(coordinate + leftOffset, "px");

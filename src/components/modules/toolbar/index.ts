@@ -124,9 +124,9 @@ export default class Toolbar extends Module {
       fragment.appendChild($.make('div', this.Editor.Toolbox.CSS.tooltipShortcut, {
         textContent: '⇥ Tab',
       }));
-
+      const topOffset = 15;
       tooltip.style.left = '-17px';
-
+      tooltip.style.transform = 'translate3d(-50%, '.concat(`${topOffset}`, 'px, 0)');
       tooltip.innerHTML = '';
       tooltip.appendChild(fragment);
       tooltip.classList.add(this.Editor.Toolbox.CSS.tooltipShown);

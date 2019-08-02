@@ -328,7 +328,7 @@ export default class Toolbox extends Module {
 
     const leftOffset = 16;
     const coordinate = button.offsetLeft;
-    const topOffset = Math.floor(this.Editor.BlockManager.currentBlock.holder.offsetHeight / 2);
+    const topOffset = 15; // Math.floor(this.Editor.BlockManager.currentBlock.holder.offsetHeight / 2);
 
     this.nodes.tooltip.innerHTML = '';
     this.nodes.tooltip.appendChild(fragment);
